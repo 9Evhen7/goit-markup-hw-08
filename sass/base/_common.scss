@@ -1,0 +1,26 @@
+html {
+  color: var(--primeri-text-color);
+  background-color: var(--main-bcg-color);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+a {
+  color: var(--title-text-color);
+  display: inline-block;
+}
+
+button {
+  display: inline;
+
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
