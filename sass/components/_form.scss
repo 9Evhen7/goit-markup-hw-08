@@ -86,8 +86,12 @@
   }
 
   &__box {
-    width: 16px;
+    width: 22px;
     height: 15px;
+
+    @media screen and (min-width: 480px) {
+      width: 16px;
+    }
 
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
@@ -106,12 +110,18 @@
     }
   }
 
-  &_text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  &__text {
+    font-size: 12px;
+    line-height: 1.1666;
+    letter-spacing: 0.01em;
 
     color: var(--primeri-text-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
   }
 }
 
