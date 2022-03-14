@@ -120,6 +120,8 @@
 
   align-items: center;
 
+  cursor: pointer;
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 32px;
@@ -156,8 +158,8 @@
   transition-duration: 250ms;
   transition-timing-function: var(--main-cubic);
 
-  &:hover,
-  &:focus {
+  .navigation__item:hover &,
+  .navigation__item:focus & {
     color: var(--accent-color);
   }
 }
@@ -253,11 +255,11 @@
     transition-duration: 250ms;
     transition-timing-function: var(--main-cubic);
   }
-}
 
-.pasiv-link:hover:after,
-.pasiv-link:focus:after {
-  transform: scale(1);
+  .navigation__item:hover &,
+  .navigation__item:focus & {
+    transform: scale(1);
+  }
 }
 
 .header__icon {

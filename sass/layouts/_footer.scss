@@ -179,6 +179,7 @@
   &__btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 
     font-weight: 700;
     font-size: 16px;
@@ -199,10 +200,13 @@
   }
 
   &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 24px;
     height: 24px;
 
-    background-image: url(../images/studio/icon-send.svg);
     fill: var(--main-bcg-color);
 
     margin-left: 10px;

@@ -86,6 +86,10 @@
   }
 
   &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 22px;
     height: 15px;
 
@@ -96,7 +100,6 @@
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
     background-color: var(--main-bcg-color);
-    background-image: url(../images/studio/icon-check.svg);
     background-position: center;
 
     margin-right: 8px;
@@ -107,6 +110,10 @@
     .check__input:checked + & {
       background-color: var(--accent-color);
       border: 2px solid transparent;
+    }
+
+    &-icon {
+      fill: var(--main-bcg-color);
     }
   }
 

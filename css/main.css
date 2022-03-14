@@ -552,6 +552,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .navigation__item {
@@ -593,7 +594,7 @@ img {
     line-height: 1.1428;
   }
 }
-.navigation__link:hover, .navigation__link:focus {
+.navigation__item:hover .navigation__link, .navigation__item:focus .navigation__link {
   color: var(--accent-color);
 }
 
@@ -704,9 +705,7 @@ img {
             transition-timing-function: var(--main-cubic);
   }
 }
-
-.pasiv-link:hover:after,
-.pasiv-link:focus:after {
+.navigation__item:hover .pasiv-link::after, .navigation__item:focus .pasiv-link::after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -805,12 +804,58 @@ img {
 .hero--bg {
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/studio/hero-img.jpg);
-  background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../images/studio/hero-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
+}
+@media screen and (max-width: 767px) {
+  .hero--bg {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../../images/mobile/studio/hero/mob_hero_480.jpg);
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../../images/mobile/studio/hero/mob_hero_480.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero--bg {
+    background-image: url("../../images/mobile/studio/hero/mob_hero_960.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 3), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767px) and (min-resolution: 288dpi), screen and (max-width: 767px) and (min-resolution: 3dppx) {
+  .hero--bg {
+    background-image: url("../../images/mobile/studio/hero/mob_hero_1440.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero--bg {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../../images/tablet/studio/hero/tab_hero_768.jpg);
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../../images/tablet/studio/hero/tab_hero_768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero--bg {
+    background-image: url("../../images/tablet/studio/hero/tab_hero_1536.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero--bg {
+    background-image: url("../../images/tablet/studio/hero/tab_hero_2304.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero--bg {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../../images/desktop/studio/hero/desk_hero_1600.jpg);
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../../images/desktop/studio/hero/desk_hero_1600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero--bg {
+    background-image: url("../../images/desktop/studio/hero/desk_hero_3200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero--bg {
+    background-image: url("../../images/desktop/studio/hero/desk_hero_4800.jpg");
+  }
 }
 .hero__title {
   margin-bottom: 30px;
@@ -1000,8 +1045,10 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -1356,6 +1403,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1374,9 +1424,17 @@ img {
   }
 }
 .footer-form__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 24px;
   height: 24px;
-  background-image: url(../images/studio/icon-send.svg);
   fill: var(--main-bcg-color);
   margin-left: 10px;
 }
@@ -1768,12 +1826,20 @@ img {
   clip: rect(0 0 0 0);
 }
 .check__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 22px;
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   background-color: var(--main-bcg-color);
-  background-image: url(../images/studio/icon-check.svg);
   background-position: center;
   margin-right: 8px;
   -webkit-transition: background-color 250ms var(--main-cubic), border 250ms var(--main-cubic);
@@ -1787,6 +1853,9 @@ img {
 .check__input:checked + .check__box {
   background-color: var(--accent-color);
   border: 2px solid transparent;
+}
+.check__box-icon {
+  fill: var(--main-bcg-color);
 }
 .check__text {
   font-size: 12px;
