@@ -11,64 +11,64 @@
     margin-left: auto;
     margin-right: auto;
 
-    // @media screen and (max-width: 767px) {
-    //   background-image: linear-gradient(
-    //       var(--hero-gradient),
-    //       var(--hero-gradient)
-    //     ),
-    //     url("../../images/mobile/studio/hero/mob_hero_480.jpg");
+    @media screen and (max-width: 767px) {
+      background-image: linear-gradient(
+          var(--hero-gradient),
+          var(--hero-gradient)
+        ),
+        url(../../images/mobile/studio/hero/mob_hero_480.jpg);
 
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    //   max-width: 1600px;
-    //   @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //     background-image: url("../../images/mobile/studio/hero/mob_hero_960.jpg");
-    //   }
-    //   @media screen and (min-device-pixel-ratio: 3),
-    //     screen and (min-resolution: 288dpi),
-    //     screen and (min-resolution: 3dppx) {
-    //     background-image: url("../../images/mobile/studio/hero/mob_hero_1440.jpg");
-    //   }
-    // }
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 1600px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../../images/mobile/studio/hero/mob_hero_960.jpg");
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url("../../images/mobile/studio/hero/mob_hero_1440.jpg");
+      }
+    }
 
-    // @media screen and (min-width: 768px) {
-    //   background-image: linear-gradient(
-    //       var(--hero-gradient),
-    //       var(--hero-gradient)
-    //     ),
-    //     url("../../images/tablet/studio/hero/tab_hero_768.jpg");
-    //   @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //     background-image: url("../../images/tablet/studio/hero/tab_hero_1536.jpg");
-    //   }
-    //   @media screen and (min-device-pixel-ratio: 3),
-    //     screen and (min-resolution: 288dpi),
-    //     screen and (min-resolution: 3dppx) {
-    //     background-image: url("../../images/tablet/studio/hero/tab_hero_2304.jpg");
-    //   }
-    // }
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+          var(--hero-gradient),
+          var(--hero-gradient)
+        ),
+        url("../../images/tablet/studio/hero/tab_hero_768.jpg");
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../../images/tablet/studio/hero/tab_hero_1536.jpg");
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url("../../images/tablet/studio/hero/tab_hero_2304.jpg");
+      }
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //   background-image: linear-gradient(
-    //       var(--hero-gradient),
-    //       var(--hero-gradient)
-    //     ),
-    //     url("../../images/desktop/studio/hero/desk_hero_1600.jpeg");
-    //   @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //     background-image: url("../../images/desktop/studio/hero/desk_hero_3200.jpeg");
-    //   }
-    //   @media screen and (min-device-pixel-ratio: 3),
-    //     screen and (min-resolution: 288dpi),
-    //     screen and (min-resolution: 3dppx) {
-    //     background-image: url("../../images/desktop/studio/hero/desk_hero_4800.jpeg");
-    //   }
-    // }
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+          var(--hero-gradient),
+          var(--hero-gradient)
+        ),
+        url(../../images/desktop/studio/hero/desk_hero_1600.jpeg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../images/desktop/studio/hero/desk_hero_3200.jpeg);
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../../images/desktop/studio/hero/desk_hero_4800.jpeg);
+      }
+    }
   }
 
   &__title {
