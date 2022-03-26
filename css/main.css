@@ -479,6 +479,11 @@ img {
     transition: transform 250ms var(--main-cubic), opacity 250ms var(--main-cubic), visibility 250ms var(--main-cubic), -webkit-transform 250ms var(--main-cubic);
   }
 }
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    width: 100%;
+  }
+}
 
 .mob-menu-close-btn {
   position: absolute;
@@ -530,12 +535,6 @@ img {
     margin-right: 84px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .navigation {
-    margin-right: 305px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: -webkit-box;
@@ -598,6 +597,10 @@ img {
   color: var(--accent-color);
 }
 
+.contacts {
+  margin-left: auto;
+}
+
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,6 +655,14 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contacts__link.phone {
+    font-size: 34px;
+    line-height: 1.1764;
+    color: var(--accent-color);
+  }
+}
+
 .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,17 +675,6 @@ img {
   line-height: 1.1666;
   letter-spacing: 0.02em;
   color: var(--primeri-text-color);
-  -webkit-transition: font-size 250ms var(--main-cubic), line-hight 250ms var(--main-cubic), color 250ms var(--main-cubic);
-  transition: font-size 250ms var(--main-cubic), line-hight 250ms var(--main-cubic), color 250ms var(--main-cubic);
-}
-.contacts__item:hover .contacts__link, .contacts__item:focus .contacts__link {
-  color: var(--accent-color);
-}
-@media screen and (max-width: 768px) {
-  .contacts__item:hover .contacts__link, .contacts__item:focus .contacts__link {
-    font-size: 34px;
-    line-height: 1.1764;
-  }
 }
 @media screen and (min-width: 768px) {
   .contacts__link {
@@ -774,10 +774,8 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .active-page {
-    color: var(--accent-color);
-  }
+.active-page {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -794,8 +792,8 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--footer-bcg-color);
   color: var(--main-bcg-color);
   text-align: center;
@@ -845,6 +843,8 @@ img {
   .hero--bg {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/desktop/studio/hero/desk_hero_1600.jpeg);
     background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../images/desktop/studio/hero/desk_hero_1600.jpeg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -902,6 +902,11 @@ img {
     margin: -15px;
   }
 }
+@media screen and (max-width: 768px) {
+  .qualities__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .qualities__item {
     margin: 15px;
@@ -955,8 +960,6 @@ img {
 @media screen and (min-width: 1200px) {
   .works {
     display: block;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 .works__title {
@@ -1208,6 +1211,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1219,12 +1224,6 @@ img {
 @media screen and (max-width: 767px) {
   .footer__address {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__address {
-    margin-left: auto;
-    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1250,11 +1249,6 @@ img {
   color: var(--main-bcg-color);
 }
 
-@media screen and (min-width: 768px) {
-  .footer-networks {
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-networks {
     margin-right: auto;
@@ -1383,7 +1377,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .footer-form__input {
-    width: 480px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1463,8 +1457,6 @@ img {
 @media screen and (min-width: 1200px) {
   .works {
     display: block;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 .works__title {
@@ -1573,6 +1565,11 @@ img {
   color: var(--main-bcg-color);
 }
 
+.curent-filter {
+  background-color: var(--accent-color);
+  color: var(--main-bcg-color);
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-net {
     display: -webkit-box;
@@ -1583,8 +1580,10 @@ img {
     margin: -15px;
   }
 }
-.portfolio-net__item:not(last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .portfolio-net__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-net__item {
@@ -1667,6 +1666,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 10px;
   background-color: var(--backdrop-color);
   opacity: 1;
   visibility: visible;
@@ -1689,8 +1689,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 100%;
-  width: 100%;
+  height: 95%;
+  width: 95%;
   background-color: var(--main-bcg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1705,14 +1705,14 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 .modal__button {
@@ -1835,7 +1835,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 22px;
+  width: 15px;
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;

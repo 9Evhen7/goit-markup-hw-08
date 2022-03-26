@@ -10,6 +10,11 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   &__item {
     @media screen and (min-width: 768px) {
       margin: 15px;

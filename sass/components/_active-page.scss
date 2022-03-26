@@ -1,7 +1,5 @@
 .active-page {
-  @media screen and (min-width: 768px) {
-    color: var(--accent-color);
-  }
+  color: var(--accent-color);
 }
 
 .active-page::after {

@@ -1,6 +1,6 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-color: var(--footer-bcg-color);
   color: var(--main-bcg-color);
@@ -69,6 +69,8 @@
         screen and (min-resolution: 3dppx) {
         background-image: url(../images/desktop/studio/hero/desk_hero_4800.jpeg);
       }
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 
