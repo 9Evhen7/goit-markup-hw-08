@@ -7,8 +7,10 @@
   display: block;
   background-color: var(--main-bcg-color);
 
-  height: 100%;
-  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
+  // height: 100%;
+  // width: 100%;
 
   @media screen and (min-width: 768px) {
     width: 450px;
