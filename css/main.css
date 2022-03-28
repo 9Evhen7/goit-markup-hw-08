@@ -1737,12 +1737,6 @@ img {
   border-radius: 4px;
   padding: 40px;
 }
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
@@ -1754,8 +1748,8 @@ img {
     transition: -webkit-transform 250ms var(--main-cubic);
     transition: transform 250ms var(--main-cubic);
     transition: transform 250ms var(--main-cubic), -webkit-transform 250ms var(--main-cubic);
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 .modal__button {
