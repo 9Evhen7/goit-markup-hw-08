@@ -698,6 +698,12 @@ img {
     line-height: 1.1666;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.1428;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .pasiv-link::after {
@@ -1667,7 +1673,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: var(--title-text-color);
 }
 .portfolio-net__text {
