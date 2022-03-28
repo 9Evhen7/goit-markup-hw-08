@@ -244,6 +244,14 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.1428;
+
+    &:focus,
+    &:hover {
+      color: var(--accent-color);
+    }
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--main-cubic);
   }
 }
 

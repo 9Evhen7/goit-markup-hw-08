@@ -702,6 +702,15 @@ img {
   .contacts__link {
     font-size: 14px;
     line-height: 1.1428;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: var(--main-cubic);
+            transition-timing-function: var(--main-cubic);
+  }
+  .contacts__link:focus, .contacts__link:hover {
+    color: var(--accent-color);
   }
 }
 
